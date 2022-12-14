@@ -5,8 +5,8 @@ import { Helmet } from 'react-helmet-async'
 import banner1 from '../assets/images/banner03.png'
 import banner2 from '../assets/images/banner02.png'
 import banner3 from '../assets/images/banner01.png'
-import homepage from '../assets/images/homepage.png'
-import feature2 from '../assets/images/features2.png'
+import homepage from '../assets/images/bannerInfo.png'
+import feature2 from '../assets/images/bannerApp.png'
 import { Button, LinkButton } from '../components/buttons'
 import { EmailSignUp } from '../components/emails'
 import { ProductItemListing } from '../components/products'
@@ -41,7 +41,7 @@ function HomePage() {
   }, [products])
 
   return (
-    <div className="w-full flex flex-col relative overflow-auto">
+    <div className="w-full flex flex-col relative overflow-hidden">
       {/*Helmet async*/}
       <Helmet>
         <title>Medeli | Đặt thuốc có ngay</title>
@@ -86,7 +86,7 @@ function HomePage() {
               <div className="flex w-full tablet:w-1/3">
                 <Link to="/products">
                   <Button Size="medium" Color="secondary" State="default">
-                    View collection
+                    Shop now
                   </Button>
                 </Link>
               </div>
@@ -133,11 +133,11 @@ function HomePage() {
             {/* content */}
             <div className="flex flex-col w-full gap-1">
               <p className="text-h4 tablet:text-h2">
-                It started with a small idea
+                We also have an Mobile app!
               </p>
               <p className="text-body-sm tablet:text-body-lg">
-                A global brand with local beginnings, our story begain in a
-                small studio in South London in early 2014
+                Download our app to get the best experience, get good deals 
+                and great advice from top-tier pharmacists
               </p>
             </div>
 
@@ -145,7 +145,7 @@ function HomePage() {
             <div className="w-full flex tablet:block">
               <Link to="/products">
                 <Button Size="medium" Color="opaque" State="default">
-                  View collection
+                  View Products
                 </Button>
               </Link>
             </div>

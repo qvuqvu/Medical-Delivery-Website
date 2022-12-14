@@ -20,6 +20,10 @@ module.exports = {
       satoshi: ['Satoshi', 'sans-serif']
     },
     extend: {
+      animation: {
+        growth: 'growth 0.3s ease-in-out infinite',
+        wiggle: 'wiggle 1s ease-in-out infinite'
+      },
       colors: {
         primary: '#88CFF9',
         dark_primary: '#43B6FB',
@@ -62,3 +66,4 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/line-clamp')]
 }
+
