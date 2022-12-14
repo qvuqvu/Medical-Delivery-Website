@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const avion_list = ['A', 'V', 'I', 'O', 'N']
+const avion_list = ['M', 'E', 'D', 'E', 'L', 'I']
 
 function PagePreloader() {
   return (
@@ -15,8 +15,8 @@ function PagePreloader() {
           animate={{
             opacity: [1, 0],
             fontWeight: [600, 600],
-            color: '#002366',
-            borderColor: ['#cac6da', '#002366'],
+            color: '#88CFF9',
+            borderColor: ['#CFEDFF', '#88CFF9'],
             transition: {
               duration: 0.2 * 4,
               delay: 0.1 * index,
