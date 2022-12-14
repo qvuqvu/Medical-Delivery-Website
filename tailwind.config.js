@@ -21,13 +21,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#4e4d93',
-        dark_primary: '#2a254b',
-        secondary: '#424242',
+        primary: '#88CFF9',
+        dark_primary: '#43B6FB',
+        secondary: '#43B6FB',
         dark_secondary: '#1b1b1b',
         light_grey: '#f9f9f9',
-        border_grey: '#ebe8f4',
-        border_dark: '#cac6da'
+        border_grey: '#CFEDFF',
+        border_dark: '#CFEDFF'
       },
       spacing: {
         1: '1px'
