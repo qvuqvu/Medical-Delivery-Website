@@ -13,7 +13,7 @@ function InfoItem({ icon, label, desc }) {
 
   return (
     <div
-      className="px-6 py-9 bg-border_grey dark:bg-secondary mt-6 col-span-4 tablet:col-span-3 laptop:col-span-3 laptop:mt-0 rounded-xl shadow-lg shadow-gray-600/50 dark:shadow-light_grey/20 dark:text-light_grey"
+      className="px-6 py-9 bg-primary dark:bg-secondary mt-6 col-span-4 tablet:col-span-3 laptop:col-span-3 laptop:mt-0 rounded-xl shadow-lg shadow-gray-600/50 dark:shadow-light_grey/20 dark:text-light_grey"
       ref={infoRef}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
