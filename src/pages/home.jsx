@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-
+import banner1 from '../assets/images/banner03.png'
+import banner2 from '../assets/images/banner02.png'
+import banner3 from '../assets/images/banner01.png'
 import homepage from '../assets/images/homepage.png'
 import feature2 from '../assets/images/features2.png'
 import { Button, LinkButton } from '../components/buttons'
@@ -14,9 +16,10 @@ import {
   getProducts
 } from '../redux/features/productsSlice'
 import { selectCartStatus } from '../redux/features/carts/cartSlice'
-import { InfoItemList } from '../components/others'
+import { BannerCarousel, InfoItemList } from '../components/others'
 import { useDarkMode } from '../hooks/useDarkMode'
 import { PagePreloader } from '../components/preloader'
+import BannerCarouselImage from '../components/others/bannerCarouselImage'
 
 function HomePage() {
   const { mode: darkMode } = useDarkMode()
@@ -38,12 +41,30 @@ function HomePage() {
   }, [products])
 
   return (
-    <div className="w-full flex flex-col relative">
+    <div className="w-full flex flex-col relative overflow-auto">
       {/*Helmet async*/}
       <Helmet>
-        <title>Avion</title>
+        <title>Medeli | Đặt thuốc có ngay</title>
       </Helmet>
 
+      {/* banner carousel */}
+      <div className="justify-center my-8">
+        <BannerCarouselImage
+          slides={[
+            <img
+              src={banner1}
+              alt="poster"
+              className="w-8/12 justify-center"
+            />,
+            <img
+              src={banner2}
+              alt="poster"
+              className="w-8/12 justify-center"
+            />,
+            <img src={banner3} alt="poster" className="w-8/12 justify-center" />
+          ]}
+        />
+      </div>
       {/* homepage poster */}
       <div>
         <div className="w-full flex justify-center">
@@ -76,7 +97,7 @@ function HomePage() {
               <img
                 src={homepage}
                 alt="poster"
-                className="w-full max-h-[700px] object-cover"
+                className="w-1/2 max-h-[700px] object-cover"
               />
             </div>
           </div>
