@@ -77,7 +77,7 @@ function Navbar() {
             <ButtonIcon Icon="search" Color={darkMode} />
           </div>
 
-          {/* Avion Logo */}
+          {/* Medeli Logo */}
           <div className="text-h4 dark:text-white">
             <Link to="/">
               <div className='flex items-center'>

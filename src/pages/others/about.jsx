@@ -31,7 +31,7 @@ function AboutPage() {
               From a studio in London to a global brand with over 400 outlets
             </div>
             <p className="text-body-sm mt-3 laptop:text-body-md">
-              When we started Avion, the idea was simple. Make high quality
+              When we started Medeli, the idea was simple. Make high quality
               furniture affordable and available for the mass market. <br />{' '}
               <br />
               Handmade, and lovingly crafted furniture and homeware is what we
@@ -74,7 +74,7 @@ function AboutPage() {
               exquisite
             </div>
             <p className="text-body-sm laptop:text-body-md mt-3">
-              When we started Avion, the idea was simple. Make high quality
+              When we started Medeli, the idea was simple. Make high quality
               furniture affordable and available for the mass market. <br />
               <br /> Handmade, and lovingly crafted furniture and homeware is
               what we live, breathe and design so our Chelsea boutique become

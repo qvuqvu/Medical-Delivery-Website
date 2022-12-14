@@ -11,7 +11,7 @@ const jobs = [
   },
   {
     id: 2,
-    job: 'Hub Team Leader - Avion Xpress',
+    job: 'Hub Team Leader - Medeli Xpress',
     position: 'Product Management',
     level: 'Experienced (Team Lead)',
     location: 'Vietnam - Hanoi'
@@ -25,28 +25,28 @@ const jobs = [
   },
   {
     id: 4,
-    job: 'Recruitment Lead - People Team, Avion Xpress Vietnam',
+    job: 'Recruitment Lead - People Team, Medeli Xpress Vietnam',
     position: 'Data Science',
     level: 'Internship',
     location: 'Vietnam - Ho Chi Minh City'
   },
   {
     id: 5,
-    job: 'Business Development Intern - Business Development, Avion Xpress Viet Nam',
+    job: 'Business Development Intern - Business Development, Medeli Xpress Viet Nam',
     position: 'Business Development and Partnerships',
     level: 'Experienced (Individual Contributor)',
     location: 'Vietnam - Hanoi'
   },
   {
     id: 6,
-    job: 'Lead Anti-Fraud Specialist - Risk Management, Avion Xpress Vietnam',
+    job: 'Lead Anti-Fraud Specialist - Risk Management, Medeli Xpress Vietnam',
     position: 'Risk Management',
     level: 'Experienced (Team Lead)',
     location: 'Vietnam - Ho Chi Minh City'
   },
   {
     id: 7,
-    job: 'Key Account Management - Business Development, AvionFood',
+    job: 'Key Account Management - Business Development, MedeliFood',
     position: 'Business Development and Partnerships',
     level: 'Internship',
     location: 'Vietnam - Hanoi'
@@ -67,14 +67,14 @@ const jobs = [
   },
   {
     id: 10,
-    job: 'Workforce Planning Analyst - Recruitment, Avion Xpress Vietnam',
+    job: 'Workforce Planning Analyst - Recruitment, Medeli Xpress Vietnam',
     position: 'Operations',
     level: 'Experienced (Individual Contributor)',
     location: 'Vietnam - Hanoi'
   },
   {
     id: 11,
-    job: 'Assistant Business Intelligence Manager - Business Intelligence, Avion',
+    job: 'Assistant Business Intelligence Manager - Business Intelligence, Medeli',
     position: 'Operations',
     level: 'Experienced (Individual Contributor)',
     location: 'Vietnam - Ho Chi Minh City'
@@ -329,10 +329,10 @@ function Vacancies() {
           We're Hiring
         </h3>
         <p className="text-justify laptop:text-center laptop:w-9/12 laptop:mx-auto">
-          Avion creates products and services that push boundaries and innovate
+          Medeli creates products and services that push boundaries and innovate
           business. We're looking for curious, hand-working leaders to join our
           team and help empower our global commuity of sellers. Have an idea?
-          pitch it - entrepreneurial minds thrive at Avion.
+          pitch it - entrepreneurial minds thrive at Medeli.
         </p>
       </div>
     </div>

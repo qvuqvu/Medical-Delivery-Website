@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 
-const avion_list = ['M', 'E', 'D', 'E', 'L', 'I']
+const Medeli_list = ['M', 'E', 'D', 'E', 'L', 'I']
 
 function PagePreloader() {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-border_dark/70 dark:bg-secondary/70 backdrop-blur-lg z-[200] flex justify-center items-center">
-      {avion_list.map((item, index) => (
+      {Medeli_list.map((item, index) => (
         <motion.div
           key={index}
           initial={{

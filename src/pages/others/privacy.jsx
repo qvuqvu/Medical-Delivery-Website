@@ -3,7 +3,7 @@ function Privacy() {
     <div>
       <div className="bg-dark_primary pt-16 pb-20 laptop:pl-24">
         <h2 className="text-white text-h3 text-center laptop:text-left">
-          Avion Privacy Policy
+          Medeli Privacy Policy
         </h2>
         <p className="text-h6 text-gray-500 text-center mt-8 laptop:text-left">
           Last update: February 14, 2022
@@ -60,8 +60,8 @@ function Privacy() {
               How we protect your privacy
             </h3>
             <p className="mt-10">
-              Avion offer services to help you run your business, including a
-              platform to host your own Avion database. As part of running those
+              Medeli offer services to help you run your business, including a
+              platform to host your own Medeli database. As part of running those
               services we collect data about you and your business. This data is
               not only essential to run our services, but also critical for the
               safety of our services and all our users.This policy explains what
@@ -86,7 +86,7 @@ function Privacy() {
               of our contact forms, you voluntarily give us certain information.
               This typically includes your name, email address, and sometimes
               your phone number, postal address (when an invoice or delivery is
-              required),your business sector and interest in Avion, as well as a
+              required),your business sector and interest in Medeli, as well as a
               personal password.
             </p>
             <p className="mt-6">
@@ -120,8 +120,8 @@ function Privacy() {
               <b className="font-medium text-dark_primary">
                 Customer Databases:{' '}
               </b>
-              When you subscribe to an Avion Cloud service and create your own
-              Avion database (for example by starting a Free Trial), any
+              When you subscribe to an Medeli Cloud service and create your own
+              Medeli database (for example by starting a Free Trial), any
               information or content you submit or upload into your database is
               your own, and you control it fully.
             </p>
@@ -158,7 +158,7 @@ function Privacy() {
             </h3>
             <p className="mt-10">
               If you have are any question regarding this Privacy Policy, or any
-              enquiry about your personal data,please reach out to the Avion
+              enquiry about your personal data,please reach out to the Medeli
               Helpdesk or contact us via email at ContactUs
             </p>
           </div>

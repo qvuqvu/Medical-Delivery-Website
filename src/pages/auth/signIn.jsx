@@ -79,7 +79,7 @@ function SignIn() {
         transition={{ type: 'spring', stiffness: 100, duration: 0.5 }}
       >
         <Link to="/">
-          <p className="w-full text-h2 text-center">Avion</p>
+          <p className="w-full text-h2 text-center">Medeli</p>
         </Link>
 
         {/* Form Sign In */}

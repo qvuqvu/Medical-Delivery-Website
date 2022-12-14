@@ -68,7 +68,7 @@ function SignUp() {
         transition={{ type: 'spring', stiffness: 100 }}
       >
         <Link to="/">
-          <p className="w-full text-h2 text-center">Avion</p>
+          <p className="w-full text-h2 text-center">Medeli</p>
         </Link>
         {/* Form Sign Un */}
         <form className="mt-5 px-4" onSubmit={handleSubmit(submitForm)}>

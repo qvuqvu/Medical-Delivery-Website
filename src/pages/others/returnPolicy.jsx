@@ -12,7 +12,7 @@ function ReturnPolicy() {
         <div className="laptop:w-8/12">
           <div className="mb-8">
             <h3 className="text-center laptop:text-left text-h3 font-medium mb-5 text-dark_primary">
-              What is the return policy at Avion?
+              What is the return policy at Medeli?
             </h3>
             <p className="text-center text-h6 font-normal laptop:text-left">
               22 Thg 10, 2022
@@ -20,17 +20,17 @@ function ReturnPolicy() {
           </div>
           <div className="border-2 border-dark_primary rounded-md p-3 laptop:border-none laptop:p-0">
             <p className="font-h5">
-              At Avion, we appreciate the trust of our customers when ordering
-              products. The after-sales policy at Avion is built on a commitment
+              At Medeli, we appreciate the trust of our customers when ordering
+              products. The after-sales policy at Medeli is built on a commitment
               to protecting the interests of consumers so that you can rest
               assured to shop and experience the service.
             </p>
           </div>
           <div className="border-2 border-dark_primary rounded-md p-3 mt-5 laptop:border-none laptop:p-0">
             <p className="font-h5">
-              Avion guarantees that the products sold at Avion are new and 100%
+              Medeli guarantees that the products sold at Medeli are new and 100%
               genuine. In the rare case that the product you receive is
-              defective, damaged or not as described, Avion is committed to
+              defective, damaged or not as described, Medeli is committed to
               protecting customers with a return and warranty policy.
             </p>
           </div>
@@ -378,18 +378,18 @@ function ReturnPolicy() {
             <p className="text-body-sm laptop:text-body-md">
               <b className="text-dark_primary text-body-md font-bold">Note: </b>
               Within 7 days after receiving the goods, if your device has a
-              technical fault and has been repaired, Avion regrets not to
+              technical fault and has been repaired, Medeli regrets not to
               support product return and exchange, only warranty support (if the
               product is not available for purchase) !
             </p>
             <ul className="hidden laptop:block list-disc pl-10 mt-8">
               <li className="font-h5">
-                To ensure the interests of customers and Avion has the basis to
+                To ensure the interests of customers and Medeli has the basis to
                 work with relevant departments, all requests for
                 exchange/return/warranty you need to provide pictures/videos of
                 defective products. Past the time to exchange / return products,
                 if we have not received enough pictures / clips from customers,
-                Avion would like to refuse to support. Besides, you need to
+                Medeli would like to refuse to support. Besides, you need to
                 record a video clip of product packaging as proof of
                 comparison/complaint related to return and exchange later (if
                 necessary).
@@ -462,7 +462,7 @@ function ReturnPolicy() {
           <ul className="list-disc laptop:list-none">
             <li>
               <a href="#" className="text-primary underline">
-                What is the warranty policy at Avion?
+                What is the warranty policy at Medeli?
               </a>
             </li>
             <li className="mt-4">
@@ -472,17 +472,17 @@ function ReturnPolicy() {
             </li>
             <li className="mt-4">
               <a href="#" className="text-primary underline">
-                What is the product return policy at Avion?
+                What is the product return policy at Medeli?
               </a>
             </li>
             <li className="mt-4">
               <a href="#" className="text-primary underline">
-                How do I register for billing when I make a purchase at Avion?
+                How do I register for billing when I make a purchase at Medeli?
               </a>
             </li>
             <li className="mt-4">
               <a href="#" className="text-primary underline">
-                How do I order through the Avion website?
+                How do I order through the Medeli website?
               </a>
             </li>
           </ul>
@@ -509,7 +509,7 @@ function ReturnPolicy() {
               Register exchange
             </p>
             <p className="text-center text-h6 mt-5">
-              Contact Avion via hotline 1-844-553-6737 to register for exchange,
+              Contact Medeli via hotline 1-844-553-6737 to register for exchange,
               including Saturday, Sunday
             </p>
           </div>
@@ -542,7 +542,7 @@ function ReturnPolicy() {
               Free shipping on returns
             </p>
             <p className="text-center text-h6 mt-5">
-              Avion recalls products nationwide for free
+              Medeli recalls products nationwide for free
             </p>
           </div>
         </div>
@@ -551,7 +551,7 @@ function ReturnPolicy() {
       <div className="bg-light_grey px-6 py-8 mt-10">
         <h3 className="text-center pb-8 text-body-lg font-bold">Belive Us</h3>
         <p className="text-center">
-          Avion always accompany and bring absolute trust to you
+          Medeli always accompany and bring absolute trust to you
         </p>
       </div>
     </div>

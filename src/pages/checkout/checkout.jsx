@@ -49,7 +49,7 @@ function Checkout() {
             {/*logo*/}
             <Link to="/">
               <div className="w-full py-4 border-b border-b-border_dark/20">
-                <p className="text-h2 text-light_grey font-[600]">AVION</p>
+                <p className="text-h2 text-light_grey font-[600]">Medeli</p>
               </div>
             </Link>
 
