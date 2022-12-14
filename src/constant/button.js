@@ -12,7 +12,7 @@ export const colors = {
     disabled: 'bg-light_grey text-dark_primary opacity-50'
   },
   primary: {
-    default: 'bg-dark_primary text-white hover:bg-[#1e193e]',
+    default: 'bg-dark_primary text-white hover:bg-[#00A0FF]',
     disabled: 'bg-dark_primary text-white opacity-50'
   },
   opaque: {
