@@ -4,7 +4,7 @@ import { SocialMedia } from '../others'
 
 function Footer() {
   return (
-    <div className="w-full flex flex-col items-center bg-dark_primary dark:bg-secondary">
+    <div className="w-full flex flex-col items-center bg-secondary dark:bg-dark_secondary">
       {/* top footer */}
       <div className="w-full flex flex-col px-10 py-10 gap-10 text-white tablet:flex-row tablet:gap-0 tablet:items-start">
         {/* "categories" component */}
@@ -100,7 +100,7 @@ function Footer() {
       <div className="w-full py-5 tablet:px-8 tablet:flex tablet:flex-row tablet:items-center">
         {/* copyright */}
         <p className="text-body-sm text-white text-center mr-auto">
-          Copyright 2022 Avion LTD
+          Copyright 2022 Medeli LTD
         </p>
 
         {/* social media */}
