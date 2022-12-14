@@ -19,7 +19,7 @@ import { useSearchMode } from '../../hooks/useSearchMode'
 import { setEmptyWishlist } from '../../redux/features/wishlist/wishlistSlice'
 import { setEmptyCart } from '../../redux/features/carts/cartSlice'
 import { setLogOutUser } from '../../redux/features/userSlice'
-
+import logo from '../../assets/images/logo.png'
 function Navbar() {
   const handleMode = useNavMode().handleMode
   const { mode: darkMode } = useDarkMode()
@@ -78,8 +78,17 @@ function Navbar() {
           </div>
 
           {/* Avion Logo */}
-          <div className="text-h3 dark:text-white">
-            <Link to="/">Avion</Link>
+          <div className="text-h4 dark:text-white">
+            <Link to="/">
+              <div className='flex items-center'>
+                <img
+                  src={logo}
+                  alt="feature2"
+                  className="w-12 mr-2"
+                />
+                <div className='text-secondary'>Medeli</div>
+              </div>
+            </Link>
           </div>
 
           <div className="flex gap-2 items-center">
