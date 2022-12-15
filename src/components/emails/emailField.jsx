@@ -8,7 +8,7 @@ Properties:
 import { Button } from '../buttons'
 
 const colors = {
-  dark: ['bg-[rgba(255,255,255,0.15)]', 'white'],
+  dark: ['bg-[rgba(255,255,255,0.15)]', 'white', 'placeholder-white'],
   light: ['bg-light_grey', 'primary']
 }
 
@@ -17,11 +17,17 @@ function EmailField({ Color = 'dark' }) {
     <div className="w-full flex">
       <input
         placeholder="your@email.com"
-        className={`${colors[Color][0]} grow-[1] pl-5 overflow-auto`}
+        className={`${colors[Color][0]} ${colors[Color][2]} grow-[1] pl-5 overflow-auto `}
       />
-      <Button Size="medium" State="default" Color={colors[Color][1]}>
-        Sign up
-      </Button>
+      <div className='-ml-2'>
+        <Button
+          Size="medium"
+          State="default"
+          Color={colors[Color][1]}
+        >
+          Sign up
+        </Button>
+      </div>
     </div>
   )
 }

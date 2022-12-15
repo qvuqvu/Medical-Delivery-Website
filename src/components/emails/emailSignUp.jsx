@@ -9,7 +9,7 @@ import EmailField from './emailField'
 
 function EmailSignUp() {
   return (
-    <div className="w-full flex flex-col relative items-center">
+    <div className="w-full flex flex-col relative items-center laptop:items-start">
       {/* background image */}
 
       <img
@@ -21,24 +21,24 @@ function EmailSignUp() {
         <img src={doctor} alt="signup backdround" className=" " />
       </div>
       {/* content */}
-      <div className="absolute top-1/2 -translate-y-1/2 w-full p-8  flex flex-col gap-4 laptop:w-2/5 laptop:items-start laptop:">
-        <p className="text-white laptop:text-center text-h3 laptop:text-h2">
-          With our great pharmacist, <br/> we can help you with your health
+      <div className="absolute top-1/2 -translate-y-1/2 w-full p-8  flex flex-col gap-4 laptop:w-2/5 laptop:items-center laptop:ml-10">
+        <p className="text-white laptop:text-left text-h3 laptop:text-h2">
+          With our great pharmacist, <br/> we can help enhance your health
         </p>
         <p className="text-white text-body-sm laptop:text-left laptop:px-10">
           Sign up for our healthcare newsletter and receive exclusive offers on new ranges,
           sales, pop up stores and more
         </p>
         <ul className="text-white text-body-md laptop:w-full laptop:px-10 laptop:flex laptop:justify-between">
-          <li className="flex gap-1 items-center">
+          <li className="flex gap-2 items-center">
             <FontAwesomeIcon icon={faCircleCheck} />
             Exclusive offers
           </li>
-          <li className="flex gap-1 items-center">
+          <li className="flex gap-2 items-center">
             <FontAwesomeIcon icon={faCircleCheck} />
             Free events
           </li>
-          <li className="flex gap-1 items-center">
+          <li className="flex gap-2 items-center">
             <FontAwesomeIcon icon={faCircleCheck} />
             Large discounts
           </li>
