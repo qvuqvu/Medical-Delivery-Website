@@ -16,7 +16,7 @@ import {
   selectStatus,
   selectUserUid
 } from '../../redux/features/userSlice'
-import WhiteRoomImg from '../../assets/images/features3.png'
+import BannerImg from '../../assets/images/signinbanner.png'
 import { PagePreloader } from '../../components/preloader'
 
 function SignIn() {
@@ -65,10 +65,10 @@ function SignIn() {
       <section className="w-full h-full hidden tablet:block relative z-10">
         <img
           className="w-full h-full object-cover relative z-10"
-          src={WhiteRoomImg}
-          alt="Ảnh nội thất"
+          src={BannerImg}
+          alt="Billboard Medeli"
         />
-        <div className="w-full h-full block bg-black/60 absolute top-0 z-20"></div>
+        <div className="w-full h-full block  absolute top-0 z-20"></div>
       </section>
 
       {/*animated login container for tablet and laptop*/}
@@ -79,7 +79,7 @@ function SignIn() {
         transition={{ type: 'spring', stiffness: 100, duration: 0.5 }}
       >
         <Link to="/">
-          <p className="w-full text-h2 text-center">Medeli</p>
+          <p className="w-full text-white font-satoshi text-h3 text-center "> Welcome to Medeli</p>
         </Link>
 
         {/* Form Sign In */}
@@ -122,9 +122,9 @@ function SignIn() {
             <span className="text-right">
               <Link
                 to="/forgetPassword"
-                className="text-h6 font-medium text-primary laptop:text-border_grey"
+                className="text-h6 font-medium text-primary laptop:text-white"
               >
-                Forgot password
+                Forgot password 
               </Link>
             </span>
           </div>
@@ -149,12 +149,12 @@ function SignIn() {
               <Icon icon="google_28" />
             </span>
             <span className="block laptop:hidden">Sign in with Google</span>
-            <span className="hidden laptop:block">Google</span>
+            <span className="hidden laptop:block text-black">Sign in with Google</span>
           </Button>
         </div>
 
         {/* Direct sign up page */}
-        <p className="text-h6 mt-6 text-center text-border_dark font-normal">
+        <p className="text-h6 mt-6 text-center text-white font-normal">
           Don't have an account? &nbsp;
           <Link to="/signup">
             <u className="text-dark_primary laptop:text-light_grey">Sign up</u>
