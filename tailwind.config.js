@@ -30,6 +30,7 @@ module.exports = {
         secondary: '#43B6FB',
         dark_secondary: '#1b1b1b',
         light_grey: '#f9f9f9',
+        accent:'#00A0FF',
         border_grey: '#CFEDFF',
         border_dark: '#CFEDFF'
       },
