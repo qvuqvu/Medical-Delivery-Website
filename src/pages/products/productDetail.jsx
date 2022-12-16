@@ -15,7 +15,7 @@ import {
   addItemToUserCart
 } from '../../redux/features/carts/cartSlice'
 import { selectUserUid } from '../../redux/features/userSlice'
-import WhiteRoomImg from '../../assets/images/features3.png'
+import WhiteRoomImg from '../../assets/images/bannerApp.png'
 import { InfoItemList, Overview } from '../../components/others'
 import {
   ProductDesc,
@@ -30,6 +30,7 @@ import {
 } from '../../redux/features/wishlist/wishlistSlice'
 import { CommentDrawer } from '../../components/comments'
 import { getCommentByProductId } from '../../redux/features/comment/commentSlice'
+import Loading2 from '../../components/animations/loading2animation'
 
 function ProductDetailPage() {
   // get scroll position
@@ -145,7 +146,9 @@ function ProductDetailPage() {
           </div>
         </section>
       ) : (
-        <div>loading....</div>
+        <div className="flex justify-center">
+          <Loading2 />
+        </div>
       )}
 
       {/* Infor Card List */}
@@ -161,11 +164,11 @@ function ProductDetailPage() {
         <div className="flex flex-col py-9 laptop:p-10 laptop:basis-3/6">
           <div className="mb-14 text-h4">
             <h4 className="text-h4 mb-4 laptop:text-h2 laptop:mb-5">
-              Join the club and get the benefits
+              We also have an Mobile app!
             </h4>
             <small className="text-body-sm laptop:text-body-md">
-              Sign up for our newsletter and receive exclusive offers on new
-              ranges, sales, pop up stores and more
+              Download our app to get the best experience, get good deals and
+              great advice from top-tier pharmacists
             </small>
           </div>
           <div className="flex-1"></div>
