@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Helmet } from 'react-helmet-async'
 
 import { Button } from '../../components/buttons'
-import clubImg from '../../assets/images/features3.png'
+import clubImg from '../../assets/images/bannerApp.png'
 import { EmailField } from '../../components/emails'
 import { ProductItemListing } from '../../components/products'
 import {
@@ -13,6 +13,7 @@ import {
   selectLastVisible,
   setClearProducts
 } from '../../redux/features/productsSlice'
+import Loading2 from '../../components/animations/loading2animation'
 
 function ProductListingPage() {
   //declare dispatch
@@ -141,7 +142,9 @@ function ProductListingPage() {
         {status !== 'loading' ? (
           <ProductItemListing products={products} />
         ) : (
-          <div>loading...</div>
+          <div className='flex justify-center'>
+          <Loading2/>
+        </div>
         )}
 
         {/* Load more Button */}
