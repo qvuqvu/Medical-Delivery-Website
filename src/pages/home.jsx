@@ -20,6 +20,7 @@ import { BannerCarousel, InfoItemList } from '../components/others'
 import { useDarkMode } from '../hooks/useDarkMode'
 import { PagePreloader } from '../components/preloader'
 import BannerCarouselImage from '../components/others/bannerCarouselImage'
+import { Loading2 } from '../components/animations/loading2animation'
 
 function HomePage() {
   const { mode: darkMode } = useDarkMode()
@@ -122,7 +123,9 @@ function HomePage() {
           {status === 'idle' ? (
             <ProductItemListing products={productList} />
           ) : (
-            <div>Loading...</div>
+            <div className="flex justify-center">
+              <Loading2 />
+            </div>
           )}
         </div>
 
@@ -136,8 +139,8 @@ function HomePage() {
                 We also have an Mobile app!
               </p>
               <p className="text-body-sm tablet:text-body-lg">
-                Download our app to get the best experience, get good deals 
-                and great advice from top-tier pharmacists
+                Download our app to get the best experience, get good deals and
+                great advice from top-tier pharmacists
               </p>
             </div>
 
