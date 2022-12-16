@@ -13,6 +13,7 @@ import {
   selectCategories,
   getCategories
 } from '../../redux/features/category/categorySlice'
+import Loading2 from '../animations/loading2animation'
 
 function NavDrawer() {
   const { mode, handleMode } = useNavMode()
@@ -87,7 +88,9 @@ function NavDrawer() {
                   </li>
                 ))
               ) : (
-                <div>Loading</div>
+                <div className="flex justify-center">
+                  <Loading2/>
+                </div>
               )}
             </ul>
           </div>
