@@ -20,6 +20,7 @@ import { setEmptyWishlist } from '../../redux/features/wishlist/wishlistSlice'
 import { setEmptyCart } from '../../redux/features/carts/cartSlice'
 import { setLogOutUser } from '../../redux/features/userSlice'
 import logo from '../../assets/images/logo.png'
+import Loading1 from '../animations/loading1animation'
 function Navbar() {
   const handleMode = useNavMode().handleMode
   const { mode: darkMode } = useDarkMode()
@@ -68,7 +69,7 @@ function Navbar() {
         </div>
 
         {/* navbar top */}
-        <div className="w-full py-1 px-8 flex justify-between items-center">
+        <div className="w-full py-3 px-8 flex justify-between items-center">
           {/* Search field */}
           <div
             className="mobile:hidden tablet:block relative"
@@ -80,13 +81,9 @@ function Navbar() {
           {/* Medeli Logo */}
           <div className="text-h4 dark:text-white">
             <Link to="/">
-              <div className='flex items-center'>
-                <img
-                  src={logo}
-                  alt="feature2"
-                  className="w-12 mr-2"
-                />
-                <div className='text-secondary'>Medeli</div>
+              <div className="flex items-center">
+                <img src={logo} alt="feature2" className="w-12 mr-2" />
+                <div className="text-secondary">Medeli</div>
               </div>
             </Link>
           </div>
@@ -187,11 +184,13 @@ function Navbar() {
                     color={darkMode === 'light' ? 'dark' : 'light'}
                   >
                     {category.name}
-                  </LinkButton>
+                  </LinkButton> 
                 </li>
               ))
             ) : (
-              <div>Loading</div>
+              <div className='justify-center w-10'>
+                <Loading1 className="ml-10" />
+              </div>
             )}
           </ul>
         </div>
