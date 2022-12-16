@@ -22,6 +22,7 @@ import EmailSchema from '../../validations/email'
 import { AddressList } from '../../components/user'
 import { Button } from '../../components/buttons'
 import { PopupAddress } from '../../components/popup'
+import Loading2 from '../../components/animations/loading2animation'
 
 function CheckoutInformation() {
   const userEmail = useSelector(selectUserEmail)
@@ -116,7 +117,9 @@ function CheckoutInformation() {
             addressDefault={userAddressDefault}
           />
         ) : (
-          <div>Loading....</div>
+          <div className="flex justify-center">
+            <Loading2/>
+          </div>
         )}
       </div>
 
