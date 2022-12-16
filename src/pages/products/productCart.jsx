@@ -6,6 +6,7 @@ import { ProductCartList } from '../../components/products'
 import { Button } from '../../components/buttons'
 import { selectCartItems } from '../../redux/features/carts/cartSlice'
 import { selectCurrentStep } from '../../redux/features/stepper/stepperSlice'
+import Empty from '../../components/animations/emptyanimation'
 
 function ProductCartPage() {
   //call cart state
@@ -62,7 +63,9 @@ function ProductCartPage() {
           </Link>
         </div>
       ) : (
-        <div>No Item</div>
+        <div className='flex w-full justify-center'>
+          <Empty/>
+        </div>
       )}
     </div>
   )
