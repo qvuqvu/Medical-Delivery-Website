@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 
-import clubImg from '../../assets/images/features3.png'
+import clubImg from '../../assets/images/bannerApp.png'
 import { EmailField } from '../../components/emails'
 import { ProductItemListing } from '../../components/products'
 import { Button } from '../../components/buttons'
@@ -14,6 +14,7 @@ import {
   selectStatusCategory,
   setClearCategory
 } from '../../redux/features/productsSlice'
+import Loading2 from '../../components/animations/loading2animation'
 
 function Category() {
   //declare dispatch
@@ -46,8 +47,8 @@ function Category() {
 
       {/* this is Header component */}
       <header className=" bg-light_grey dark:bg-secondary py-8 px-6 laptop:bg-white dark:laptop:bg-dark_secondary laptop:pt-20 laptop:pb-3 laptop:px-20 relative z-30 flex justify-center">
-        <h2 className="text-center w-fit h-fit px-6 rounded-full shadow-md shadow-gray-700/50 dark:shadow-light_grey/60 mb-10 text-h2 laptop:mb-8 bg-border_dark dark:bg-secondary dark:text-light_grey">
-          {category.toUpperCase()}
+        <h2 className="text-center w-fit h-fit px-6 py-2 rounded-full shadow-md shadow-gray-700/50 dark:shadow-light_grey/60 mb-10 text-h2 text-white laptop:mb-8 bg-accent font-satoshi dark:bg-secondary dark:text-light_grey">
+          {category}
         </h2>
       </header>
 
@@ -57,13 +58,15 @@ function Category() {
         {categoryStatus === 'idle' ? (
           <ProductItemListing products={productsCategory} />
         ) : (
-          <div>Loading</div>
+          <div className="flex justify-center">
+            <Loading2 />
+          </div>
         )}
 
         {/* Load more Button */}
         <div className="flex mt-8 laptop:max-w-[180px] laptop:mx-auto">
           <Button Color="secondary" onClick={handleLoadMore}>
-            View collection
+            View products
           </Button>
         </div>
       </div>
@@ -71,12 +74,14 @@ function Category() {
       {/* this is Contact component */}
       <div className="hidden laptop:flex">
         <img className="w-1/2" src={clubImg} alt="join club" />
-        <div className="w-1/2 object-cover p-[70px] flex flex-col justify-between">
+        <div className="w-1/2 object-cover p-[70px] flex flex-col justify-between text-secondary">
           <div>
-            <h3 className="text-h2">Join the club and get the benefits</h3>
+            <h3 className="text-h2">
+              With our great pharmacist, we can help enhance your health
+            </h3>
             <p className="text-h5 my-5 w-4/5">
-              Sign up for our newsletter and receive exclusive offers on new
-              ranges, sale, pop up store and more
+              Sign up for our healthcare newsletter and receive exclusive offers
+              on new ranges, sales, pop up stores and more
             </p>
           </div>
           <EmailField Color="light" />
