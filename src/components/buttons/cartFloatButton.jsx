@@ -10,6 +10,7 @@ import { ProductCartList } from '../products'
 import Button from './button'
 import { selectCartItems } from '../../redux/features/carts/cartSlice'
 import { selectCurrentStep } from '../../redux/features/stepper/stepperSlice'
+import Empty from '../animations/emptyanimation'
 
 function CartFloatButton() {
   const scrollY = useScrollPosition()
@@ -100,9 +101,9 @@ function CartFloatButton() {
                     </Button>
                   </Link>
                   {cartItemFloatNumber === 0 ? (
-                    <Button Color="red" State="disable">
-                      NO PRODUCTS
-                    </Button>
+                    <div className="flex w-full justify-center">
+                      <Empty />
+                    </div>
                   ) : (
                     <Button Color="primary" onClick={handleCartCheckout}>
                       CHECK OUT
