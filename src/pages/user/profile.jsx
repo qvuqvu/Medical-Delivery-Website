@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserPen } from '@fortawesome/free-solid-svg-icons'
 
 import { Button } from '../../components/buttons'
-import CeilingLamp from '../../assets/images/CeilingLamp.png'
+import placeholder from '../../assets/images/profileplaceholder.png'
 import { Controller, Input, RadioInput } from '../../components/fields'
 import UserInformationSchema from '../../validations/userInformation'
 import {
@@ -26,6 +26,7 @@ import {
 } from '../../redux/features/userSlice'
 import { updateOneUser } from '../../services/user'
 import createUserImg from '../../services/user/create'
+import { colors } from '../../constant/button'
 
 function Profile() {
   //create form hook
@@ -131,7 +132,7 @@ function Profile() {
   }
 
   return (
-    <div className="flex-row px-6 pb-14 mb-8 laptop:w-full bg-border_grey dark:bg-secondary dark:text-white rounded-tl-lg rounded-bl-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
+    <div className="flex-row px-6 pb-14 mb-8 laptop:mt-5 laptop:w-full font-satoshi bg-border_grey dark:bg-secondary dark:text-white rounded-tl-lg rounded-bl-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
       {/*Helmet async*/}
       <Helmet>
         <title>Profile</title>
@@ -139,7 +140,7 @@ function Profile() {
 
       {/*title*/}
       <div className="mb-5">
-        <div className="laptop:text-h4">Personal information</div>
+        <div className="laptop:text-h4 laptop:mt-5">Personal information</div>
         <div className="text-body-sm laptop:text-body-md laptop:mb-2">
           Manage personal information to secure your account
         </div>
@@ -293,14 +294,14 @@ function Profile() {
             onMouseLeave={() => setHover(false)}
           >
             <img
-              src={userAvatar || CeilingLamp}
+              src={userAvatar || placeholder}
               alt="avatar"
               className="w-full h-full object-cover"
             />
 
             {hover && (
               <div className="w-full h-full flex justify-center items-center bg-light_grey/40 dark:bg-secondary/40 absolute top-0 left-0">
-                <FontAwesomeIcon icon={faUserPen} />
+                <FontAwesomeIcon color='#00A0FF' icon={faUserPen} />
               </div>
             )}
           </div>
