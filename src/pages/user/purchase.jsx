@@ -11,6 +11,7 @@ import {
 } from '../../redux/features/bills/billSlice'
 import { ButtonIcon } from '../../components/buttons'
 import { PagePreloader } from '../../components/preloader'
+import Empty from '../../components/animations/emptyanimation'
 
 function Purchase() {
   const [click, setClick] = useState('Waiting')
@@ -77,7 +78,9 @@ function Purchase() {
           <PurchaseItemList purchases={bills} />
         </section>
       ) : billStatus !== 'loading' && bills.length === 0 ? (
-        <div>No bills</div>
+        <div className='flex justify-center laptop:mr-96'>
+          <Empty/>
+        </div>
       ) : (
         <PagePreloader />
       )}
