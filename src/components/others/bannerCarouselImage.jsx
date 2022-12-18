@@ -12,8 +12,11 @@ import 'swiper/css'
 
 function BannerCarouselImage({ slides }) {
   return (
-    <div className="w-full ml-11 justify-center">
+    <div className="w-full justify-center">
       <Swiper
+        slidesPerView={3}
+        spaceBetween={-200}
+        pagination={{ clickable: true }}
         modules={[Autoplay]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
