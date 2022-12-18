@@ -33,11 +33,11 @@ function Address() {
   return (
     <div className="w-full">
       {addressStatus === 'idle' ? (
-        <div className="px-6 py-2 my-2 w-full bg-border dark:bg-secondary dark:text-white rounded-tl-lg rounded-bl-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
+        <div className="px-6 py-2 my-2 w-10/12 laptop:mt-5 bg-primary dark:bg-secondary dark:text-white rounded-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
           {/*address page header*/}
-          <header className="text-center laptop:text-left laptop:flex laptop:justify-between laptop:items-center laptop:border-b-2 border-primary pb-3">
+          <header className="text-center laptop:text-left laptop:flex laptop:justify-between laptop:items-center pb-3">
             <div>
-              <h3 className="text-body-lg font-semibold text-dark_primary dark:text-light_grey">
+              <h3 className="text-body-lg font-semibold text-white dark:text-light_grey">
                 Delivery Address
               </h3>
               <p className="mb-3 laptop:mb-0 text-body-md text-border_dark">
@@ -46,7 +46,7 @@ function Address() {
             </div>
             <div className="flex laptop:max-w-sm">
               <Button
-                Color="primary"
+                Color="secondary"
                 Custom={true}
                 Padding="px-6"
                 onClick={() => setPopupAddress(true)}
