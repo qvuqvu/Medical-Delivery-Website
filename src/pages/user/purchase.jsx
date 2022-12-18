@@ -78,7 +78,7 @@ function Purchase() {
           <PurchaseItemList purchases={bills} />
         </section>
       ) : billStatus !== 'loading' && bills.length === 0 ? (
-        <div className='flex justify-center laptop:mr-96'>
+        <div className='flex justify-center laptop:mr-96 laptop:mt-5'>
           <Empty/>
         </div>
       ) : (
