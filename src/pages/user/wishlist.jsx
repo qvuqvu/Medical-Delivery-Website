@@ -9,6 +9,7 @@ import {
 } from '../../redux/features/wishlist/wishlistSlice'
 import { selectUserUid } from '../../redux/features/userSlice'
 import { PagePreloader } from '../../components/preloader'
+import Empty from '../../components/animations/emptyanimation'
 
 function Wishlist() {
   const dispatch = useDispatch()
@@ -30,7 +31,9 @@ function Wishlist() {
       <ProductItemListing products={itemList} />
     </div>
   ) : wishlistList.length === 0 && wishlistStatus !== 'loading' ? (
-    <div>No wishlist</div>
+    <div className='w-full laptop:mt-7 flex justify-center'>
+      <Empty />
+    </div>
   ) : (
     <PagePreloader />
   )
