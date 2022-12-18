@@ -132,7 +132,7 @@ function Profile() {
   }
 
   return (
-    <div className="flex-row px-6 pb-14 mb-8 laptop:mt-5 laptop:w-full font-satoshi bg-border_grey dark:bg-secondary dark:text-white rounded-tl-lg rounded-bl-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
+    <div className="flex-row px-6 pb-14 mb-8 laptop:mt-5 laptop:w-9/12 font-satoshi bg-border_grey dark:bg-secondary dark:text-white rounded-lg shadow-md shadow-black/40 dark:shadow-light_grey/30">
       {/*Helmet async*/}
       <Helmet>
         <title>Profile</title>
@@ -140,7 +140,7 @@ function Profile() {
 
       {/*title*/}
       <div className="mb-5">
-        <div className="laptop:text-h4 laptop:mt-5">Personal information</div>
+        <div className="laptop:text-h4 laptop:mt-5 laptop:font-bold">Personal information</div>
         <div className="text-body-sm laptop:text-body-md laptop:mb-2">
           Manage personal information to secure your account
         </div>
