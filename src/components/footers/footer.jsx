@@ -12,28 +12,23 @@ function Footer() {
           <p className="text-h3 tablet:text-h5">Categories</p>
           <ul className="flex flex-col items-center gap-2 text-body-lg tablet:text-body-sm tablet:items-start">
             <li>
-              <LinkButton size="small" path="/products/crockery">
-                Crockery
+              <LinkButton size="small" path="/products/medical-gadgets">
+                Medical gadgets
               </LinkButton>
             </li>
             <li>
-              <LinkButton size="small" path="/products/tableware">
-                Tableware
+              <LinkButton size="small" path="/products/dietary-supplement">
+                Dietary supplement
               </LinkButton>
             </li>
             <li>
-              <LinkButton size="small" path="/products/ceramics">
-                Ceramics
+              <LinkButton size="small" path="/products/medicines">
+                Medicines
               </LinkButton>
             </li>
             <li>
-              <LinkButton size="small" path="/products/plant-pots">
-                Plant pots
-              </LinkButton>
-            </li>
-            <li>
-              <LinkButton size="small" path="/products/chairs">
-                Chairs
+              <LinkButton size="small" path="/products/covid">
+                Covid-19
               </LinkButton>
             </li>
           </ul>
