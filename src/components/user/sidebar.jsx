@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 
 import { LinkButton } from '../buttons'
-import CeilingLamp from '../../assets/images/CeilingLamp.png'
+import profilePlaceholder from '../../assets/images/profileplaceholder.png'
 import { useDarkMode } from '../../hooks/useDarkMode'
 import {
   selectUserAvatar,
@@ -19,7 +19,7 @@ function Sidebar() {
         {/*user avatar*/}
         <div className="w-20 h-20 rounded-full border-2 border-border_dark overflow-hidden absolute top-0 -translate-y-1/2">
           <img
-            src={userAvatar || CeilingLamp}
+            src={userAvatar || profilePlaceholder}
             alt="user"
             className="w-full h-full object-cover"
           />
@@ -27,12 +27,12 @@ function Sidebar() {
 
         {/*user name*/}
         <div>
-          <p className="text-h5 font-[500]">{userName || 'user name'}</p>
+          <p className="text-h5 font-medium laptop:mt-2">{userName || 'user name'}</p>
         </div>
       </div>
 
       {/*sidebar menu*/}
-      <ul className="flex justify-center items-center laptop:flex-col laptop:gap-8 laptop:mb-12">
+      <ul className="flex justify-center font-satoshi text-accent items-center laptop:flex-col laptop:gap-8 laptop:mb-12">
         <li>
           <LinkButton
             path="/user/account/profile"
