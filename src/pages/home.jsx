@@ -74,17 +74,14 @@ function HomePage() {
             <div className="w-full px-8 mb-8 flex flex-col justify-between top-1/2 tablet:-translate-y-1/2 right-[5%] tablet:p-10 tablet:absolute tablet:w-1/2 laptop:w-2/5 tablet:h-1/2 tablet:bg-white tablet:dark:bg-secondary">
               <div className="w-full flex flex-col gap-2">
                 <p className="text-h3 tablet:text-h3 text-dark_primary dark:text-light_grey">
-                  Luxury homeware for people who love timeless design quality
-                </p>
-                <p className="text-body-md text-dark_primary dark:text-light_grey tablet:hidden">
-                  With our new collection, view over 400 bespoke pieces from
-                  homeware through to furniture tody
+                  A dedicated medical delivery service
                 </p>
                 <p className="tablet:block text-body-lg text-dark_primary dark:text-light_grey">
-                  Shop the new Spring 2022 collection today
+                  Our light-speed delivery service is here to help you get your
+                  meds delivered to your door in no time.
                 </p>
               </div>
-              <div className="flex w-full tablet:w-1/3">
+              <div className="flex w-full tablet:w-1/3 mt-6">
                 <Link to="/products">
                   <Button Size="medium" Color="secondary" State="default">
                     Shop now
