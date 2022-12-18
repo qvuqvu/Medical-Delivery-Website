@@ -40,7 +40,7 @@ function Address() {
               <h3 className="text-body-lg font-semibold text-white dark:text-light_grey">
                 Delivery Address
               </h3>
-              <p className="mb-3 laptop:mb-0 text-body-md text-border_dark">
+              <p className="mb-3 laptop:mb-0 text-body-md text-white">
                 Manage your shipping address
               </p>
             </div>
