@@ -114,7 +114,7 @@ function HomePage() {
               path="/products"
               color={darkMode === 'light' ? 'dark' : 'light'}
             >
-              <p className="text-h3">All Product</p>
+              <p className="text-h3 font-satoshi">All Product</p>
             </LinkButton>
           </div>
           {status === 'idle' ? (
