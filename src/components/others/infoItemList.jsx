@@ -5,7 +5,7 @@ function InfoItemList() {
   return (
     // Feature list
     <section className="w-full">
-      <h4 className="text-h4 text-secondary mb-9 pr-20 laptop:text-center laptop:text-h3 dark:text-light_grey">
+      <h4 className="text-h4 text-secondary font-satoshi mb-9 pr-20 laptop:text-center laptop:text-h3 dark:text-light_grey">
         What makes our brand different
       </h4>
       {/* Feature item */}
