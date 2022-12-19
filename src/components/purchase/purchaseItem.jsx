@@ -41,14 +41,14 @@ function PurchaseItem({ purchaseItem }) {
       {/*detail*/}
       <div className="w-full flex flex-col items-end gap-4">
         <p>
-          <strong>Subtotal Price:</strong> {purchaseItem.total}$
+          <strong>Subtotal Price:</strong> {purchaseItem.total} VND
         </p>
         <p>
-          <strong>Shipping:</strong> {purchaseItem.shipping_method.price}$
+          <strong>Shipping:</strong> {purchaseItem.shipping_method.price} VND
         </p>
         <p>
           <strong>Total Price:</strong>{' '}
-          {purchaseItem.total + purchaseItem.shipping_method.price}$
+          {purchaseItem.total + purchaseItem.shipping_method.price} VND
         </p>
         <div className={`flex gap-2`}>
           <div

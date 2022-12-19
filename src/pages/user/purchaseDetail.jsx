@@ -95,8 +95,8 @@ function PurchaseDetail() {
               <p className="text-h2">Total</p>
             </div>
             <div className="flex flex-col items-center">
-              <p>{billDetail.total}$</p>
-              <p>{billDetail.shipping_method.price}$</p>
+              <p>{billDetail.total} VND</p>
+              <p>{billDetail.shipping_method.price} VND</p>
               <p className="text-h2">{total}$</p>
             </div>
           </div>

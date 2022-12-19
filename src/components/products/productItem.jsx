@@ -57,7 +57,7 @@ function ProductItem({ product }) {
             <strong>Name:</strong> {product.name}
           </p>
           <p>
-            <strong>Price:</strong> {product.price}$
+            <strong>Price:</strong> {product.price} VND
           </p>
         </div>
         <div className="w-full flex mb-4">
@@ -81,7 +81,7 @@ function ProductItem({ product }) {
             <strong>Name:</strong> {product.name}
           </p>
           <p className="line-clamp-2 text-h6">
-            <strong>Price:</strong> {product.price}$
+            <strong>Price:</strong> {product.price} VND
           </p>
         </div>
         <div className="px-2 mb-4">

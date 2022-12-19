@@ -92,7 +92,7 @@ function CartFloatButton() {
               {/*this is total price and buttons*/}
               <div className="w-full p-6 fixed bottom-0 bg-light_grey dark:bg-secondary rounded-3xl border-t border-t-black dark:border-t-white flex flex-col tablet:items-center gap-2">
                 <p className="text-h5 font-[600] text-primary dark:text-white text-start tablet:text-center w-full ">
-                  TOTAL: {totalPrice}$ | {cartItems.length} items
+                  TOTAL: {totalPrice} VND | {cartItems.length} items
                 </p>
                 <div className="w-full tablet:w-1/4 flex flex-col gap-2">
                   <Link to="/productCart">

@@ -26,12 +26,12 @@ function PurchaseProductItem({ product }) {
           x{product.number}
         </p>
         <p className="text-body-sm laptop:text-body-md text-black/70 dark:text-light_grey/60">
-          {product.cartItem.price}$
+          {product.cartItem.price} VND
         </p>
       </div>
       {/*price*/}
       <div className="w-[10%] h-full flex items-center justify-center">
-        <p>{(product.number * product.cartItem.price).toFixed(2)}$</p>
+        <p>{(product.number * product.cartItem.price).toFixed(2)} VND</p>
       </div>
     </div>
   )

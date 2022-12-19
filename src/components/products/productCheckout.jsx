@@ -14,7 +14,7 @@ function ProductCheckout({ img, name, price, numberProduct }) {
       </div>
 
       {/*price*/}
-      <p className="text-light_grey h-6">${price}</p>
+      <p className="text-light_grey h-6">{price} VND</p>
     </div>
   )
 }
