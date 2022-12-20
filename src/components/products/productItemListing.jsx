@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 function ProductItemListing({ products }) {
   return (
-    <div className="grid grid-cols-2 gap-4 laptop:grid-cols-4 laptop:gap-x-5 laptop:gap-y-7">
+    <div className="grid grid-cols-2 gap-4 laptop:grid-cols-4 laptop:gap-x-7 laptop:gap-y-8">
       {products.map((item, index) => (
         <motion.div
           key={item.uuid}
