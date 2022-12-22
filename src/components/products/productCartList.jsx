@@ -17,7 +17,7 @@ import {
   removeFromUserFirebase
 } from '../../redux/features/carts/cartSlice'
 import { selectUserUid } from '../../redux/features/userSlice'
-
+import { priceFormat } from '../../services/constant/priceFormat'
 const ProductCartList = ({ cartItems, handleCartFloatClick = () => {} }) => {
   const dispatch = useDispatch()
   const userUid = useSelector(selectUserUid)
@@ -54,7 +54,7 @@ const ProductCartList = ({ cartItems, handleCartFloatClick = () => {} }) => {
               >
                 {/*Image product */}
                 <img
-                  src={cart.cartItem.arrImg[0]}
+                  src={cart.cartItem.image[0]}
                   alt={cart.cartItem.name}
                   className="w-[134px] laptop:w-[110px] h-[166px] laptop:h-[134px] max-w-none"
                 />
@@ -62,18 +62,17 @@ const ProductCartList = ({ cartItems, handleCartFloatClick = () => {} }) => {
               {/*Name , detail, price product */}
               <div className="ml-5 laptop:ml-3 p-1 flex flex-col laptop:w-[100%] laptop:flex-row">
                 <div className="flex-1">
-                  <p className="text-[16px] laptop:text-[20px]">
+                  <p className="text-[16px] laptop:text-[20px] laptop:font-semibold">
                     {cart.cartItem.name}
                   </p>
                   <p className="text-[14px] line-clamp-3">
-                    {cart.cartItem.description}
+                    {cart.cartItem.mota}
                   </p>
-                  <p className="text-[16px]">${cart.cartItem.price}</p>
                 </div>
                 {/* counter */}
                 <div className="w-fit laptop:hidden flex gap-2">
                   <Counter
-                    maxNumber={cart.cartItem.remain}
+                    maxNumber={cart.cartItem.quanity}
                     currentNumber={cart.number}
                     userUid={userUid ? userUid : null}
                     cart={cart}
@@ -103,7 +102,12 @@ const ProductCartList = ({ cartItems, handleCartFloatClick = () => {} }) => {
               </div>
             </div>
             <div className="hidden laptop:flex items-center">
-              <p>${(Number(cart.cartItem.price) * cart.number).toFixed(2)}</p>
+              <p>
+                {priceFormat(
+                  Number(cart.cartItem.gia.split(' ')[0]) * cart.number
+                )}{' '}
+                VND
+              </p>
             </div>
           </motion.div>
         ))}
