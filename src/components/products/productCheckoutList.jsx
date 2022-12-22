@@ -6,7 +6,7 @@ function ProductCheckoutList({ productList }) {
       {productList.map((product) => (
         <ProductCheckout
           key={product.uid}
-          img={product.cartItem.arrImg[0]}
+          img={product.cartItem.image[0]}
           name={product.cartItem.name}
           price={product.cartItem.price}
           numberProduct={product.number}
