@@ -69,7 +69,7 @@ function ProductCheckoutListButton({ products }) {
               }}
             >
               <ProductCheckout
-                img={item.cartItem.arrImg[0]}
+                img={item.cartItem.image[0]}
                 name={item.cartItem.name}
                 price={item.cartItem.price}
                 numberProduct={item.number}
