@@ -9,7 +9,7 @@ function PurchaseProductItem({ product }) {
       {/*img*/}
       <div className="laptop:w-[10%] w-16 h-full rounded-lg overflow-hidden">
         <img
-          src={product.cartItem.arrImg[0]}
+          src={product.cartItem.image[0]}
           alt="img"
           className="w-full h-full object-cover"
         />
