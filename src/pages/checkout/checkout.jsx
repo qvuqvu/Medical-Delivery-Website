@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import Background from '../../assets/images/background.jpg'
+import Background from '../../assets/images/signinbanner.png'
 import { Stepper } from '../../components/others'
 import {
   ProductCheckoutList,
@@ -16,8 +16,8 @@ function Checkout() {
   const shippingMethod = useSelector(selectShippingMethod)
 
   const cartSubtotalPrice = +cartItems
-    .reduce((a, b) => a + Number(b.cartItem.price) * b.number, 0)
-    .toFixed(2)
+    .reduce((a, b) => a + Number(b.cartItem.gia.split(' ')[0]) * b.number, 0)
+ 
 
   const cartTotalPrice = cartSubtotalPrice + (shippingMethod?.price || 0)
 
@@ -38,7 +38,7 @@ function Checkout() {
         />
 
         {/*backdrop*/}
-        <div className="w-full h-full bg-black/70 backdrop-blur-lg absolute top-0 left-0 z-20"></div>
+        <div className="w-full h-full bg-black/30 backdrop-blur-lg absolute top-0 left-0 z-20"></div>
       </section>
 
       {/*content*/}
@@ -102,7 +102,7 @@ function Checkout() {
               {/*total*/}
               <div className="w-full flex justify-between text-light_grey">
                 <p className="text-h3 font-[600]">Total</p>
-                <p className="text-h3 font-[600]">${cartTotalPrice}</p>
+                <p className="text-h3 font-[600]">{cartTotalPrice} VND</p>
               </div>
             </div>
           </div>
