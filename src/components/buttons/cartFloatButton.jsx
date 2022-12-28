@@ -11,7 +11,7 @@ import Button from './button'
 import { selectCartItems } from '../../redux/features/carts/cartSlice'
 import { selectCurrentStep } from '../../redux/features/stepper/stepperSlice'
 import Empty from '../animations/emptyanimation'
-
+import { priceFormat } from '../../services/constant/priceFormat'
 function CartFloatButton() {
   const scrollY = useScrollPosition()
   const [click, setClick] = useState(false)
@@ -21,7 +21,7 @@ function CartFloatButton() {
   const navigate = useNavigate()
 
   const totalPrice = cartItems
-    ?.reduce((a, b) => a + Number(b.cartItem.price) * b.number, 0)
+    ?.reduce((a, b) => a + (b.cartItem.gia.split(' ')[0]) * b.number, 0)
     .toFixed(2)
 
   const cartItemFloatNumber = cartItems.length
@@ -76,7 +76,7 @@ function CartFloatButton() {
 
             {/*this is cart item*/}
             <motion.div
-              className="w-full h-[85vh] pb-52 flex flex-col items-stretch bg-light_grey dark:bg-secondary rounded-xl border-t border-t-black dark:border-t-light_grey overflow-auto no-scrollbar relative"
+              className="w-full h-[85vh] pb-52 flex flex-col items-stretch bg-light_grey dark:bg-secondary rounded-xl border-t border-t-white dark:border-t-light_grey overflow-auto no-scrollbar relative"
               initial={{ y: 400 }}
               animate={{ y: 0 }}
               exit={{ y: 400 }}
@@ -90,9 +90,9 @@ function CartFloatButton() {
               </div>
 
               {/*this is total price and buttons*/}
-              <div className="w-full p-6 fixed bottom-0 bg-light_grey dark:bg-secondary rounded-3xl border-t border-t-black dark:border-t-white flex flex-col tablet:items-center gap-2">
+              <div className="w-full p-6 fixed bottom-0 bg-light_grey dark:bg-secondary rounded-3xl border-t border-t-primary dark:border-t-white flex flex-col tablet:items-center gap-2">
                 <p className="text-h5 font-[600] text-primary dark:text-white text-start tablet:text-center w-full ">
-                  TOTAL: {totalPrice} VND | {cartItems.length} items
+                  Total price: {priceFormat(totalPrice)} VND | {cartItems.length} items
                 </p>
                 <div className="w-full tablet:w-1/4 flex flex-col gap-2">
                   <Link to="/productCart">
