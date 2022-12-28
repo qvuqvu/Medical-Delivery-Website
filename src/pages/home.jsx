@@ -48,9 +48,11 @@ function HomePage() {
         <title>Medeli | Đặt thuốc có ngay</title>
       </Helmet>
 
-      {/* banner carousel */}
-      <div className="justify-center my-8">
+      {/* banner carousel  */}
+      <div className="hidden laptop:block justify-center my-8">
         <BannerCarouselImage
+          previewNumber={3}
+          space={-200}
           slides={[
             <img
               src={banner1}
@@ -63,6 +65,27 @@ function HomePage() {
               className="w-8/12 justify-center"
             />,
             <img src={banner3} alt="poster" className="w-8/12 justify-center" />
+          ]}
+        />
+      </div>
+      {/* banner carousel  */}
+      <div className="laptop:hidden flex justify-center my-8">
+        <BannerCarouselImage
+        
+          space={50}
+          previewNumber={1}
+          slides={[
+            <img
+              src={banner1}
+              alt="poster"
+              className=" w-9/12 justify-center"
+            />,
+            <img
+              src={banner2}
+              alt="poster"
+              className="w-9/12 justify-center"
+            />,
+            <img src={banner3} alt="poster" className="w-9/12 justify-center" />
           ]}
         />
       </div>
