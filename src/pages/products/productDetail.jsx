@@ -96,18 +96,18 @@ function ProductDetailPage() {
         <section className="flex flex-col w-full tablet:flex-row tablet:gap-4">
           {/* product image list for mobile*/}
           <div className="block tablet:hidden mb-8">
-            <ProductCarousel images={product.arrImg} />
+            <ProductCarousel images={product.image} />
           </div>
 
           {/* product image list for laptop */}
           <div className="w-full hidden tablet:block" ref={imgsRef}>
-            <ProductScrollView images={product.arrImg} />
+            <ProductScrollView images={product.image} />
           </div>
 
           {/* floating overview */}
           <div className="hidden tablet:block">
             <Overview
-              images={product.arrImg}
+              images={product.image}
               visible={
                 scrollY <= (imgsRect?.height / 4) * 3 + 144 && scrollY > 0
                   ? true
@@ -121,15 +121,12 @@ function ProductDetailPage() {
           <div className="w-full h-full sticky top-20 bg-border_grey dark:bg-secondary rounded-xl shadow-lg shadow-gray-700/40 dark:shadow-gray-300/40">
             <ProductDesc
               name={product.name}
-              desc={product.description}
-              price={product.price}
-              width={product.width}
-              height={product.height}
-              depth={product.depth}
+              desc={product.mota}
+              price={product.gia}
               saved={wishlist.find(
                 (item) => item.product.uuid === product.uuid
               )}
-              quantity={product.remain}
+              quantity={product.quantity}
               handleAddToCart={(number) => handleAddToCart(number)}
               handleAddToWishlist={() => handleAddToWishlist()}
               removeFromWishlist={() =>
@@ -138,10 +135,6 @@ function ProductDetailPage() {
                     ?.uid
                 )
               }
-              handleComment={() => {
-                setCommentOpen(!commentOpen)
-                dispatch(getCommentByProductId(product.uuid))
-              }}
             />
           </div>
         </section>
