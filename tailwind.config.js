@@ -22,7 +22,9 @@ module.exports = {
     extend: {
       animation: {
         growth: 'growth 0.3s ease-in-out infinite',
-        wiggle: 'wiggle 1s ease-in-out infinite'
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        bounce: 'bounce 10s ease-in-out infinite',
+        lightbounce: 'lightbounce 3.5s ease-in-out infinite',
       },
       colors: {
         primary: '#88CFF9',
@@ -30,7 +32,7 @@ module.exports = {
         secondary: '#43B6FB',
         dark_secondary: '#000b29',
         light_grey: '#f9f9f9',
-        accent:'#00A0FF',
+        accent: '#00A0FF',
         border_grey: '#CFEDFF',
         border_dark: '#CFEDFF'
       },
@@ -38,6 +40,14 @@ module.exports = {
         1: '1px'
       },
       keyframes: {
+        lightbounce: {
+          '0%, 100%': {
+            transform: 'translateY(-25%)'
+          },
+          '50%': {
+            transform: 'translateY(-20%)'
+          }
+        },
         growth: {
           from: {
             transform: 'scale(0.7)'
@@ -67,4 +77,3 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/line-clamp')]
 }
-
