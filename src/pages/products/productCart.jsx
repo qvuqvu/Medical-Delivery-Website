@@ -7,15 +7,15 @@ import { Button } from '../../components/buttons'
 import { selectCartItems } from '../../redux/features/carts/cartSlice'
 import { selectCurrentStep } from '../../redux/features/stepper/stepperSlice'
 import Empty from '../../components/animations/emptyanimation'
-
+import { priceFormat } from '../../services/constant/priceFormat'
 function ProductCartPage() {
   //call cart state
   const cartItems = useSelector(selectCartItems)
   const currentStep = useSelector(selectCurrentStep)
 
   const cartTotalPrice = cartItems
-    .reduce((a, b) => a + Number(b.cartItem.price) * b.number, 0)
-    .toFixed(2)
+    .reduce((a, b) => a + (b.cartItem.gia.split(' ')[0]) * b.number, 0)
+
 
   return (
     <div className="w-[100%] mb-12 p-6 laptop:px-[180px] laptop:py-16">
@@ -28,7 +28,7 @@ function ProductCartPage() {
       {Array.isArray(cartItems) && cartItems.length !== 0 ? (
         <div>
           <div className="border-b-2 border-primary-300">
-            <p className="text-[24px] laptop:text-[36px]">Your shopping cart</p>
+            <p className="font-satoshi text-[24px] laptop:text-[36px] font-medium">Your shopping cart</p>
             <div className="hidden laptop:flex py-3 justify-between border-b-2 border-primary-300">
               <p className="w-[45%]">Product</p>
               <p>Quantity</p>
@@ -40,7 +40,7 @@ function ProductCartPage() {
           <div className="flex flex-row-reverse my-4">
             <p className="text-[20px] text-primary dark:text-light_grey">
               Subtotal &emsp;{' '}
-              <span className="text-[24px]">${cartTotalPrice}</span>
+              <span className="text-[24px]">{priceFormat(cartTotalPrice)} VND</span>
             </p>
           </div>
           <div className="flex flex-row-reverse">
@@ -63,8 +63,8 @@ function ProductCartPage() {
           </Link>
         </div>
       ) : (
-        <div className='flex w-full justify-center'>
-          <Empty/>
+        <div className="flex w-full justify-center">
+          <Empty />
         </div>
       )}
     </div>
